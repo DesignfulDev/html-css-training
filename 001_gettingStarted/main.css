@@ -29,7 +29,7 @@ article {
 aside {
     width: 100%;
     height: 100px;
-    background-color: green;
+    background-color: darkgreen;
     border: 2px;
     border-color: red;
 }
