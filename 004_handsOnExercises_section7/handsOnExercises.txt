@@ -13,7 +13,7 @@ Challenges
 6) Add comments to the html document you created in the previous example.
 
 7) Identify which of these URLs are relative URL’s and which are absolute URLs:
-    a) www.google.com           R: absolute
-    b) ../pic/dog.jpg           R: relative
-    c) /pic/dog.jpg             R: absolute
-    d) chapter07/index.html     R: relative
+    a) www.google.com           A: absolute
+    b) ../pic/dog.jpg           A: relative
+    c) /pic/dog.jpg             A: absolute
+    d) chapter07/index.html     A: relative
