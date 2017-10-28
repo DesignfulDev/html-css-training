@@ -1,0 +1,19 @@
+*   {
+    /*margin: 15px;*/
+    padding: 15px;
+    border: 1px;
+}
+
+div {
+    height: fit-content;
+    border-style: dashed;
+    border-color: hotpink;
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+.darkness   {
+    color: gray();
+    font-size: 400px;
+    margin-left: 200px;
+}
