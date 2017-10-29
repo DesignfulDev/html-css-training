@@ -4,6 +4,15 @@ div {
     margin: 20px auto;
 }
 
+h1  {
+    width: 500px;
+    /*I can have up to 04 values in margin property*/
+    /*Each value is applied in the order TRBL (top, right, bottom, left)*/
+    /*If I only specify two values, the first goes to TB*/
+    /*and the second goes to RL, like in the example bellow*/
+    margin: 30px auto;
+}
+
 p   {
     border: 1px solid black;
 }
