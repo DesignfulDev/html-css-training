@@ -1,0 +1,10 @@
+div {
+    width: 500px;
+    height: 200px;
+    /*background-color: lightgrey;*/
+    border-radius: 30px;
+    border: 20px groove hotpink;
+    background-image: url("../../000_pictures/DogMusicLead-600x340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

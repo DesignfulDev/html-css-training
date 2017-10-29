@@ -1,0 +1,7 @@
+div {
+    width: 500px;
+    height: 200px;
+    background-color: lightgrey;
+    border-radius: 30px;
+    border: 20px groove hotpink;
+}
