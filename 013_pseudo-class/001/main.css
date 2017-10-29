@@ -1,0 +1,28 @@
+div {
+    border: 2px solid red;
+    width: 600px;
+    height: fit-content;
+    margin: 20px auto;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+a:link {
+    color: darkgoldenrod;
+}
+
+a:visited {
+    color: dimgray;
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: darkorange;
+}
