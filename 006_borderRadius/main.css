@@ -1,0 +1,26 @@
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-image: url("../000_pictures/SophieGamand-WetDog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    border: 15px groove hotpink;
+    border-radius: 50%;
+}
+
+.dogone {
+    border: 15px solid hotpink;
+}
+
+.dogtwo {
+    border: 15px dashed hotpink;
+}
+
+.dogthree {
+    border: 15px dotted hotpink;
+}
