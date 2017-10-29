@@ -1,0 +1,16 @@
+input:focus {
+    border: 2px solid yellowgreen;
+}
+
+[type=submit]:hover {
+    background-color: cornflowerblue;
+}
+
+[type=submit]:focus {
+    background-color: yellow;
+}
+
+[type=text]:hover {
+    background-color: lightgrey;
+    border: 2px dashed hotpink;
+}
