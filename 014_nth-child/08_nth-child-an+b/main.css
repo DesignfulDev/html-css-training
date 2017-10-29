@@ -1,0 +1,19 @@
+table, tr, td {
+    width: 100%;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+tr:nth-child(odd) {
+    background-color: dimgray;
+    color: white;
+}
+
+/* nth-child(an+b) */
+/*Selects the Nth child in increments of 5, starting at the 10th child*/
+tr:nth-child(9n+3) {
+    background-color: tomato;
+}

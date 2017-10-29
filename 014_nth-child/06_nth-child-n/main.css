@@ -1,0 +1,17 @@
+table, tr, td {
+    width: 100%;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+tr:nth-child(odd) {
+    background-color: dimgray;
+    color: white;
+}
+
+tr:nth-child(6) {
+    background-color: hotpink;
+}

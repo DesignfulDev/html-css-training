@@ -1,0 +1,18 @@
+table, tr, td {
+    width: 100%;
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+tr:nth-child(odd) {
+    background-color: dimgray;
+    color: white;
+}
+
+/*Selects the Nth child, counting from the last child*/
+tr:nth-last-child(20) {
+    background-color: tomato;
+}
