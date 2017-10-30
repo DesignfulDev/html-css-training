@@ -1,0 +1,10 @@
+body {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 36px;
+}
+
+/* Selects p tags that are an IMMEDIATE sibling following a div */
+div + p {
+    color: red;
+}

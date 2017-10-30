@@ -1,0 +1,11 @@
+body {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 36px;
+}
+
+/* Selects all p tags that are siblings following a div*/
+
+div ~ p {
+    color: red;
+}

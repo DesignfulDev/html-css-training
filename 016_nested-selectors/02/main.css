@@ -1,0 +1,10 @@
+body {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 36px;
+}
+
+/* Selects all p tags IMMEDIATELY beneath div tags */
+div > p {
+    color: red;
+}
