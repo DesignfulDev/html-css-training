@@ -1,0 +1,48 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    background-color: cornflowerblue;
+}
+
+body {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: yellowgreen;
+    border: 8px solid black;
+}
+
+h1 {
+    font-size: 36px;
+    color: royalblue;
+    margin: 40px auto 15px auto;
+}
+
+p {
+    font-size: 22px;
+    margin: 10px auto;
+}
+
+h1, p {
+    padding: 0 20px;
+}
+
+
+
+#surfup {
+    margin: 40px auto;
+    width: 60%;
+    height: 350px;
+    border-radius: 50%;
+    border: 25px groove gold;
+    background-image: url("../000_pictures/surf.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header02 {
+    color: orangered;
+}
