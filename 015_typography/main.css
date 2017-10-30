@@ -1,0 +1,22 @@
+h1::first-letter {
+    color: red;
+    font-size: 100px;
+}
+
+h2::first-letter {
+    color: tomato;
+    font-size: 50px;
+}
+
+p {
+    color: dimgray;
+}
+
+p::first-line {
+    color: cornflowerblue;
+}
+
+p::first-letter {
+    font-size: 30px;
+    font-weight: bolder;
+}
