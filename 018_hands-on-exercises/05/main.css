@@ -1,0 +1,19 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+p {
+    color: dimgray;
+}
+
+p::first-letter {
+    font-size: 36px;
+    color: gold;
+}
+
+p::first-line {
+    color: tomato;
+    font-style: italic;
+}

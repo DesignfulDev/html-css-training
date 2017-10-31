@@ -1,0 +1,17 @@
+a:link {
+    color: olive;
+}
+
+a:visited {
+    color: dimgray;
+}
+
+a:hover {
+    color: gold;
+    border: 2px dashed silver;
+}
+
+a:active {
+    color: lawngreen;
+    background-color: tomato;
+}
