@@ -1,0 +1,10 @@
+/* (2) Write some CSS that has two rules applying to the same element. The first rule should use an element selector and the second rule should use an ID. Calculate the CSS specificity of each rule to explain which rule won.
+ */
+
+li {
+    color: hotpink;
+}
+
+#alpha {
+    color: midnightblue;
+}
