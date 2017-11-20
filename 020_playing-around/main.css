@@ -1,0 +1,29 @@
+header {
+    background: #004084 no-repeat;
+    width: 100%;
+    height: fit-content;
+    border-bottom: 10px solid #ff0014;
+}
+
+.testeira {
+    color: white;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.logo {
+    background: url("../000_pictures/tim-logo-11_resize.png") #004084 10px center no-repeat;
+}
+
+#cx_main_title {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
+
+#cx_main_subtitle {
+    font-size: 1.5em;
+    font-style: italic;
+    padding-top: 20px;
+}
