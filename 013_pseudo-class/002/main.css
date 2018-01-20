@@ -7,8 +7,9 @@ div {
 
 div:hover {
     background-color: hotpink;
+    cursor: pointer;
 }
 
 div:active {
-    background-color: greenyellow;
+    background-color: goldenrod;
 }

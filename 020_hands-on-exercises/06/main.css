@@ -1,0 +1,5 @@
+/* The following rule-set will select only the p's 01, 02, 03 and the Lorem */
+
+div p {
+    color: red;
+}

@@ -1,0 +1,5 @@
+/* This rule-set will select only the p's 001, 002 and 003 */
+
+div ~ p {
+    color: red;
+}

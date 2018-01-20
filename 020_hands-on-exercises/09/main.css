@@ -1,0 +1,5 @@
+/* This rule-set will select only the p 001 */
+
+div + p {
+    color: red;
+}
