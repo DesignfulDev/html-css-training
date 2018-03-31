@@ -1,0 +1,28 @@
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+
+#one {
+    font-weight: 100;
+}
+
+#two {
+    font-weight: 300;
+}
+
+#three {
+    font-weight: 400;
+}
+
+#four {
+    font-weight: 500;
+}
+
+#five {
+    font-weight: 700;
+}
+
+#six {
+    font-weight: 900;
+}

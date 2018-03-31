@@ -1,0 +1,19 @@
+[title$="4"] {
+    color: hotpink;
+}
+
+span::selection {
+    color: white;
+    text-transform: uppercase;
+    background-color: hotpink;
+}
+
+ul::before {
+    color: red;
+    content: "check this out!"
+}
+
+.woohoo::after {
+    color: blue;
+    content: " <= daaamn!"
+}

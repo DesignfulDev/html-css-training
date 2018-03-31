@@ -1,0 +1,30 @@
+h1 {
+    color: goldenrod;
+    line-height: 0.0;
+    font-size: 30rem;
+    text-align: center;
+    text-shadow: 15px 20px 50px black;
+    font-family: sans-serif;
+}
+
+h1:hover {
+    text-decoration: overline;
+}
+
+a {
+    display: block;
+    font-size: 10rem;
+    line-height: 0;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+a:visited {
+    color: dimgrey;
+}
+
+a:hover {
+    color: darkred;
+    text-decoration: line-through;
+}
