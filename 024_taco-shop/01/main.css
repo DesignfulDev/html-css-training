@@ -1,0 +1,27 @@
+/* * {
+    border: 2px dashed hotpink;
+} */
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav, main {
+    border: 2px solid red;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+nav {
+    width: 25%;
+    vertical-align: top;
+}
+
+main {
+    width: 75%;
+}
+
+li {
+    padding: 0px 20px;
+}

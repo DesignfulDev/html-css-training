@@ -1,0 +1,31 @@
+html {
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 20px auto;
+    /* padding: 10px 20px; */
+    border: 3px solid goldenrod;
+}
+
+a {
+    color: firebrick;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 40px;
+    border: 3px solid black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+
+li:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}

@@ -1,16 +1,17 @@
-/* body {
-    display: flex;
-} */
-
 body>header, body>footer, nav, article, aside, section {
+    box-sizing: border-box;
     border: 5px solid red;
     padding: 10px;
-    margin: 10px;
 }
 
-nav>header, article>header {
-    border: 5px solid red;
+nav>header, article>header, article>footer {
+    border: 5px solid dodgerblue;
     padding: 10px;
+}
+
+nav, article, aside {
+    display: inline-block;
+    vertical-align: top;
 }
 
 nav {
@@ -23,4 +24,8 @@ article {
 
 aside {
     width: 20%;
+}
+
+section {
+    border: 5px solid darkolivegreen;
 }
