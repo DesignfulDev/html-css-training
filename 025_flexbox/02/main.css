@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: goldenrod;
+    border: 5px solid dodgerblue;
+    height: 100px;
+    width: 4%;
+    margin: 1%;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    border: 5px solid red;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,88 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    border: 5px solid red;
+}
+
+header>aside {
+    display: flex;
+    border: 3px solid blue;
+    width: 250px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+header>div {
+    display: flex;
+    flex-flow: row wrap;
+    border: 3px solid greenyellow;
+    flex-grow: 1;
+}
+
+header>div>h1, header>div>h2 {
+    display: flex;
+    border: 3px solid darkslateblue;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    border: 5px solid sandybrown;
+}
+
+nav>ul {
+    display: flex;
+    border: 3px solid seagreen;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+nav>ul>li {
+    display: flex;
+    list-style: none;
+    border: 3px solid slateblue;
+    flex-grow: 1;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionOne {
+    border: 5px solid aqua;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#sectionTwo {
+    border: 5px solid crimson;
+    display: flex;
+    /* flex-flow: row wrap; */
+}
+
+section>article {
+    border: 3px solid orchid;
+    /* flex-flow: row wrap; */
+}
+
+section>article>h2 {
+    border: 3px solid cornflowerblue;
+    margin: 0;
+}
+
+section>article>p {
+    border: 2px solid goldenrod;
+    margin: 0;
+}

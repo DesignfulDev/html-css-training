@@ -1,0 +1,32 @@
+body>header, body>footer, nav, article, aside, section {
+    box-sizing: border-box;
+    border: 5px solid red;
+    padding: 10px;
+}
+
+nav>header, article>header, article>footer {
+    border: 5px solid dodgerblue;
+    padding: 10px;
+}
+
+nav, article, aside {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    vertical-align: top;
+}
+
+nav {
+    width: 20%;
+}
+
+article {
+    width: 60%;
+}
+
+aside {
+    width: 20%;
+}
+
+section {
+    border: 5px solid darkolivegreen;
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    border: 5px solid red;
+    height: 700px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+div {
+    display: flex;
+    background-color: grey;
+    border: 5px solid dodgerblue;
+    width: 200px;
+    height: 150px;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.shift {
+    align-items: flex-end;
+}
+
+.taller {
+    height: 100px;
+    align-items: center;
+}
