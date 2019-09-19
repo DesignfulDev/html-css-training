@@ -1,7 +1,11 @@
+* {
+    margin: 0;
+}
+
 header {
     background: #004084 no-repeat;
     width: 100%;
-    height: fit-content;
+    height: 150px;
     border-bottom: 10px solid #ff0014;
 }
 
@@ -14,7 +18,7 @@ header {
 }
 
 .logo {
-    background: url("../000_pictures/tim-logo-11_resize.png") #004084 10px center no-repeat;
+    background: url("../../000_pictures/tim-logo-11_resize.png") #004084 10px center no-repeat;
 }
 
 #cx_main_title {
