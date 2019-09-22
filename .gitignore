@@ -43,8 +43,9 @@ builds/**/images/*
 *.ogg
 *.mp3
 *.mp4
-#*.png
-#*.jpeg
+*.png
+*.jpeg
+*.jpg
 
 # security / ssl
 *.pem

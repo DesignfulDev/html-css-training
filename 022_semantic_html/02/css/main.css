@@ -47,12 +47,21 @@
 .content {
 	display: flex;
 	background: darkolivegreen;
+	opacity: 0.9;
 	height: 150vh;
 }
 
 .footer {
 	background: darkred;
 	height: 50vh;
+}
+
+.footer h2 {
+	font-size: 2rem;
+	text-align: center;
+	line-height: 5rem;
+	color: white;
+	font-variant: small-caps;
 }
 
 .world {
