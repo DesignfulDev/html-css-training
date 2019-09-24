@@ -3,10 +3,11 @@
 	display: flex;
 	flex-flow: row wrap;
 	height: 80vh;
-	align-items: flex-end;
+	/* align-items: flex-end; */
 }
 
 .box {
+	display: flex;
 	width: 80px;
 	height: 80px;
 	background: yellowgreen;
@@ -14,7 +15,17 @@
 	margin: 5px;
 }
 
-#disobey {
-	align-self: stretch; /* overrides align-items, but not align-content */
-	height: auto;
+.text {
+	width: 100%;
+	text-align: center;
+	align-self: center;
+	font-size: 2rem;
+}
+
+.box:nth-child(odd) {
+	order: -1; /* the odd children of .container will come before elements with unset value for the 'order' flex property  */
+
+	/* 'order = 0' means DEFAULT order (the one from the HTML document)  */
+	/* 'order < 0' means it will come BEFORE elements with order unset */
+	/* 'order > 0' menas it will come AFTER elements with order unset */
 }
