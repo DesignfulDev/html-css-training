@@ -1,0 +1,21 @@
+.container {
+	border: 5px solid hotpink;
+	display: flex;
+	flex-flow: row wrap;
+	height: 50vh;
+	align-content: center;
+	justify-content: center;
+}
+
+.box {
+	font-size: 5rem;
+	width: 500px;
+	background: yellowgreen;
+	border: 2px solid blue;
+	text-align: right;
+	padding: 20px;
+}
+
+.box:last-child {
+	text-align: left;
+}

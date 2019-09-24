@@ -1,0 +1,20 @@
+.container {
+	border: 5px solid hotpink;
+	display: flex;
+	flex-flow: row wrap;
+	height: 80vh;
+	align-items: flex-end;
+}
+
+.box {
+	width: 80px;
+	height: 80px;
+	background: yellowgreen;
+	border: 2px solid blue;
+	margin: 5px;
+}
+
+#disobey {
+	align-self: stretch; /* overrides align-items, but not align-content */
+	height: auto;
+}
