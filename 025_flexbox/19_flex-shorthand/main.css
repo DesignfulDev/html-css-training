@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	border: 5px solid hotpink;
+	display: flex;
+	/* flex-flow: row wrap; */
+	height: 100vh;
+	align-content: flex-start;
+}
+
+.text {
+	width: 100%;
+	text-align: center;
+	align-self: center;
+	font-size: 2rem;
+}
+
+.box {
+	display: flex;
+	width: 500px;
+	height: 80px;
+	background: yellowgreen;
+	border: 2px solid blue;
+	margin: 5px;
+	flex: 0 0 auto; /* grow, shrink, basis */
+	/*
+
+	grow & shrink = 0 means the element won't grow or shrink, but will instead keep the value set by the box-sizing/width properties
+
+
+	Flexbox Froggy
+	https://flexboxfroggy.com/
+
+	*/
+}
+
+.box:nth-child(2) {
+	/*
+	flex-basis defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property"
+
+	Source: CSS Tricks Flexbox
+	https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+	*/
+	flex: 1 1 1000px;
+}

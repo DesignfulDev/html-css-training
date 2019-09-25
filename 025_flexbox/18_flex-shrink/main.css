@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	border: 5px solid hotpink;
+	display: flex;
+	/* flex-flow: row wrap; */
+	height: 100vh;
+	align-content: flex-start;
+}
+
+.box {
+	display: flex;
+	width: 500px;
+	height: 80px;
+	background: yellowgreen;
+	border: 2px solid blue;
+	margin: 5px;
+	flex-shrink: 1;
+}
+
+.text {
+	width: 100%;
+	text-align: center;
+	align-self: center;
+	font-size: 2rem;
+}
+
+.box:nth-child(2) {
+	flex-shrink: 2;
+}
