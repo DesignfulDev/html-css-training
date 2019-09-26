@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+
+.box {
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+	padding: 10px;
+}
+
+/*
+.box01 {background: #1abc9c;}
+.box02 {background: #3498db;}
+.box03 {background: #9b59b6;}
+.box04 {background: #34495e;}
+.box05 {background: #f1c40f;}
+.box06 {background: #e67e22;}
+.box07 {background: #e74c3c;}
+.box08 {background: #bdc3c7;}
+.box09 {background: #2ecc71;}
+.box10 {background: #16a085;}
+*/
+
+.box01 {
+	background: #1abc9c;
+}
+.box02 {
+	background: #3498db;
+}
+.box03 {
+	background: #9b59b6;
+}
+.box04 {
+	background: #34495e;
+}
+.box05 {
+	background: #f1c40f;
+}
+.box06 {
+	background: #e67e22;
+}
+.box07 {
+	background: #e74c3c;
+}
+.box08 {
+	background: #bdc3c7;
+}
+.box09 {
+	background: #2ecc71;
+}
+.box10 {
+	background: #16a085;
+}
+
+.container {
+	display: flex;
+	border: 10px solid goldenrod;
+	height: 100vh;
+	/* flex-direction: row; DEFAULT VALUE */
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column; */
+	/* flex-direction: column-reverse; */
+	/* flex-wrap: nowrap; DEFAULT VALUE */
+	/* flex-wrap: wrap; */
+	/* flex-wrap: wrap-reverse; */
+	flex-flow: row wrap; /* shorthand for flex-direction and flex-wrap */
+}
+
+.box {
+	flex: 1 1 300px;
+}
