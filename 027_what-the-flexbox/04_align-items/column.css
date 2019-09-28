@@ -59,43 +59,39 @@
 	border: 10px solid goldenrod;
 	height: 100vh;
 	flex-flow: row wrap;
+	/* align-items: stretch; DEFAULT VALUE */
+	/* align-items: flex-start; */
+	/* align-items: flex-end; */
+	/* align-items: center; */
+	align-items: baseline;
+	/* aligns the content baseline */
+	/* if the primary axis is column, the baseline is to the left */
 }
-
-.box {
-	flex: 1 1 300px;
-}
-
-/* With the 'order' property is possible to completly rearrange the items */
-/* It takes an integer value and orders the items from smaller to largest */
-/* The default order value of each item is 0 */
 
 .box01 {
-	order: 6;
+	font-size: 40px;
 }
 .box02 {
-	order: 3;
+	font-size: 120px;
 }
 .box03 {
-	order: 8;
+	font-size: 60px;
 }
 .box04 {
-	order: 1;
+	font-size: 55px;
 }
 .box05 {
-	order: 2;
-}
-.box06 {
-	order: -4;
+	font-size: 16px;
 }
 .box07 {
-	order: -6;
+	font-size: 80px;
 }
 .box08 {
-	order: 11;
+	font-size: 10px;
 }
 .box09 {
-	order: 5;
+	font-size: 35px;
 }
 .box10 {
-	order: 7;
+	font-size: 20px;
 }

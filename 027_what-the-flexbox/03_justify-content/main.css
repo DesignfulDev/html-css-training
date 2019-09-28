@@ -57,45 +57,12 @@
 .container {
 	display: flex;
 	border: 10px solid goldenrod;
-	height: 100vh;
-	flex-flow: row wrap;
-}
-
-.box {
-	flex: 1 1 300px;
-}
-
-/* With the 'order' property is possible to completly rearrange the items */
-/* It takes an integer value and orders the items from smaller to largest */
-/* The default order value of each item is 0 */
-
-.box01 {
-	order: 6;
-}
-.box02 {
-	order: 3;
-}
-.box03 {
-	order: 8;
-}
-.box04 {
-	order: 1;
-}
-.box05 {
-	order: 2;
-}
-.box06 {
-	order: -4;
-}
-.box07 {
-	order: -6;
-}
-.box08 {
-	order: 11;
-}
-.box09 {
-	order: 5;
-}
-.box10 {
-	order: 7;
+	/* height: 100vh; */
+	flex-flow: column wrap;
+	/* justify-content: flex-start; DEFAULT VALUE */
+	/* justify-content: flex-end; */
+	/* justify-content: center; */
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
+	justify-content: space-evenly;
 }
