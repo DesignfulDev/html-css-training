@@ -58,40 +58,17 @@
 	display: flex;
 	border: 10px solid goldenrod;
 	height: 100vh;
-	flex-flow: column wrap;
-	/* align-items: stretch; DEFAULT VALUE */
-	/* align-items: flex-start; */
-	/* align-items: flex-end; */
-	/* align-items: center; */
-	align-items: baseline;
-	/* aligns the content baseline */
-	/* if the primary axis is 'column', the baseline is to the left */
+	flex-flow: row wrap;
+	justify-content: center; /* justifies the last two wrapped elements */
+	/* align-content: stretch; DEFAULT VALUE */
+	/* align-content: flex-start; */
+	/* align-content: flex-end; */
+	/* align-content: center; */
+	/* align-content: space-between; */
+	/* align-content: space-around; */
+	align-content: space-evenly;
 }
 
-.box01 {
-	font-size: 40px;
-}
-.box02 {
-	font-size: 120px;
-}
-.box03 {
-	font-size: 60px;
-}
-.box04 {
-	font-size: 55px;
-}
-.box05 {
-	font-size: 16px;
-}
-.box07 {
-	font-size: 80px;
-}
-.box08 {
-	font-size: 10px;
-}
-.box09 {
-	font-size: 35px;
-}
-.box10 {
-	font-size: 20px;
+.box {
+	flex-basis: 25%;
 }
