@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+}
+
+.box {
+	color: white;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+	padding: 10px;
+}
+
+/*
+.box01 {background: #1abc9c;}
+.box02 {background: #3498db;}
+.box03 {background: #9b59b6;}
+.box04 {background: #34495e;}
+.box05 {background: #f1c40f;}
+.box06 {background: #e67e22;}
+.box07 {background: #e74c3c;}
+.box08 {background: #bdc3c7;}
+.box09 {background: #2ecc71;}
+.box10 {background: #16a085;}
+*/
+
+.box01 {
+	background: #1abc9c;
+}
+.box02 {
+	background: #3498db;
+}
+.box03 {
+	background: #9b59b6;
+}
+.box04 {
+	background: #34495e;
+}
+.box05 {
+	background: #f1c40f;
+}
+.box06 {
+	background: #e67e22;
+}
+.box07 {
+	background: #e74c3c;
+}
+.box08 {
+	background: #bdc3c7;
+}
+.box09 {
+	background: #2ecc71;
+}
+.box10 {
+	background: #16a085;
+}
+
+.container {
+	display: flex;
+	background: #daa52070;
+	height: 100vh;
+	width: 1200px;
+	flex-flow: row nowrap;
+	align-items: baseline;
+}
+
+/*
+
+'flex' is the shorthand for:
+1) flex-grow (DEFAULT: 0)
+2) flex-shrink (DEFAULT: 1)
+3) flex-basis (DEFAULT: 0)
+
+
+FLEX GROW
+
+'flex-grow': when flex items have room to grow inside their parent container, this is the proportion by which each item will grow until that space is filled. If set to 0, the flex items will remain with their original size. If all items have the same flex-grow value, their will grow in proportion to each other. If one flex item have a larger number set to its flex-grow property, it will take that proportion of the remaining space in relation to its flex siblings.
+
+EXAMPLE: there are three flex items A, B, and C. A and C have flex-grow set to 1. B has flex-grow set to 2. This means that, when there is space left beyond the size of their content they will grow, but B will grow twice as fast, or will take twice as much of the REMAINING space. This is import. This doesn't mean B will have twice the size of A and C, only twice as much of the extra space beyond their content, or original size.
+
+If A, B, and C all share content of the same size (say, '00'), and with that they have each a width of 120px, this means they would together take up 360px of the flex container. Now, say the flex container is 1200px. If the flex-grow of all three items were set the same value (say 1), they would grow in proportion to each other, and divide up the remaining 840px evenly, each item growing by 280px, to be 400px in total.
+
+If A and C have flex-grow set to 1, and B to 2, B will take twice as much of the remaining 840px than A and C. This means while A and C will grow by 210px each, becoming 330px in total, B will grow by 420px, becoming 540px in total.
+
+*/
+
+.box {
+	/* flex-grow: 1; */
+	flex-grow: unset;
+}
+
+.box02 {
+	/* flex-grow: 2; */
+	flex-grow: unset;
+}
+
+/*
+
+FLEX-SHRINK
+
+'flex-shrink' follows the same logic of 'flex-grow', but it gets to work when the flex container doesn't have enough space to fit the flex items with their default/content size.
+
+The default value of flex-shrink is 1. This means when there is not enough space, the flex items will shrink in the same proportion to each other. 'flex-shrink: 0' means the items will never shrink. If there's no space in the flex container, a scroll bar will appear.
+
+flex container 1200px
+3 flex items, 500px each
+natural size: 1500px
+300px missing
+
+A flex-shrink: 0, so 500px
+B flex-shrink: 1
+C flex-shrink: 2
+
+B and C need to shrink by 300px. When both have flex-shrink: 1, they each shrink by 150px, to 350px.
+
+If B is 'flex-shrink: 1' and C is 'flex-shrink: 2', C should shrink twice as fast. So C should shrink by 200px, becoming 300px, and B should shrink by 100px, becoming 400px.
+
+*/
+
+.box {
+	/* width: 500px; */
+	width: unset;
+}
+.box01 {
+	/* flex-shrink: 0; */
+	flex-shrink: unset;
+}
+.box03 {
+	/* flex-shrink: 2; */
+	flex-shrink: unset;
+}
+
+/*
+
+FLEX BASIS
+
+'flex-basis' sets the minimum width (if primary axis is row) or height (if primary axis is column) a flex item should take in its flex container, before it starts to grow or shrink as set by flex properties.
+
+*/
+
+.box {
+	flex-basis: 300px;
+}
+
+.box01 {
+	flex-basis: 200px;
+}
