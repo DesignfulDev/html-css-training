@@ -47,8 +47,9 @@ a:hover {
 	display: flex;
 }
 
+/* Flex Item */
 .flex-nav li {
-	flex: 3 1;
+	flex-grow: 3;
 }
 
 .flex-nav .social {
@@ -59,9 +60,11 @@ a:hover {
 	.flex-nav ul {
 		flex-wrap: wrap;
 	}
+
 	.flex-nav li {
 		flex-basis: 50%;
 	}
+
 	.flex-nav .social {
 		flex-basis: 25%;
 	}
