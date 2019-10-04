@@ -43,6 +43,7 @@ builds/**/images/*
 *.ogg
 *.mp3
 *.mp4
+*.webm
 *.png
 *.jpeg
 *.jpg
