@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.container {
+	border: 5px solid red;
+	height: 100vh;
+	display: flex;
+}
+
+.item {
+	width: 200px;
+	height: 100px;
+	margin: 0.2rem;
+	border: 1px solid red;
+	background-color: darkgray;
+	text-align: center;
+	/* flex-grow: 1; */
+}
+
+/*
+
+FLEX CONTAINER
+
+flex-direction
+flex-wrap
+flex-flow
+align-items
+align-content
+justify-content
+place-content (shorthand align/justify-content)
+
+*/
+
+.container {
+	/* Wrap, Direction, Flow */
+
+	/* flex-wrap: nowrap; DEFAULT VALUE */
+	/* flex-wrap: wrap; */
+	/* flex-wrap: wrap-reverse; */
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column; */
+	/* flex-direction: column-reverse; */
+	/* flex-flow: row nowrap; DEFAULT VALUE */
+	/* flex-flow: row-reverse wrap; */
+	/* flex-flow: column-reverse wrap; */
+	/* flex-flow: column wrap; */
+	flex-flow: row wrap; /* shorthand */
+
+	/* Flex Alignment */
+
+	/* align-items: center; */
+	/* align-items: flex-end; */
+	/* align-items: flex-start; */
+	/* align-content: center; */
+	/* align-content: flex-end; */
+	/* align-content: flex-start; */
+	/* align-content: space-around; */
+	align-content: space-between;
+	/* justify-content: center; */
+	/* justify-content: flex-end; */
+	/* justify-content: flex-start; DEFAULT VALUE */
+	/* justify-content: space-around; */
+	/* justify-content: space-between; */
+	justify-content: space-evenly;
+	place-content: flex-end flex-end; /* shorthand */
+}
+
+/*
+
+FLEX ITEMS
+
+align-self
+flex-basis
+flex-grow
+flex-shrink
+flex (shorthand flex-grow/shrink/basis)
+order
+
+*/
+
+.item:nth-child(5) {
+	background: hotpink;
+	/* order: 0; DEFAULT VALUE */
+	/* order: 1; Goes to last, because every other item is 0 */
+	order: -1;
+	flex: 0 1 250px;
+}
+
+.item:nth-child(8) {
+	background: tomato;
+	flex: 1 1 80px; /* shorthand */
+}
