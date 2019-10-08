@@ -1,0 +1,43 @@
+.above-fold {
+	background: center / cover url('https://picsum.photos/2000/1000?grayscale')
+		no-repeat fixed;
+	min-height: 100vh;
+}
+
+.welcome {
+	font-size: 12vw;
+	/* height: 15vw; */
+}
+
+.services {
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+.card {
+	max-width: 20%;
+	margin: 5rem 2rem;
+	padding: 4rem 3rem;
+}
+.card:hover {
+	transform: scale(1.2);
+}
+
+.card:nth-child(2) {
+	order: -1;
+}
+
+.card h3 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-bottom: 1.5rem;
+}
+
+.form-wrapper {
+	background: center / cover url('https://picsum.photos/2000/1000?grayscale')
+		no-repeat fixed;
+	min-height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

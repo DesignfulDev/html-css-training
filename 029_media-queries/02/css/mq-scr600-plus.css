@@ -1,0 +1,22 @@
+.menu ul {
+	justify-content: flex-end;
+}
+
+.menu-item {
+	padding: 0.5rem 2rem;
+}
+
+.above-fold {
+	background: center / cover url('https://picsum.photos/1200/1080?grayscale')
+		no-repeat;
+}
+
+.form-wrapper {
+	background: center / cover url('https://picsum.photos/1200/840?grayscale')
+		no-repeat fixed;
+}
+
+.card {
+	margin: 2rem auto;
+	max-width: 80%;
+}
