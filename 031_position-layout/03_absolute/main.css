@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	height: 150vh;
+}
+
+.wrapper {
+	height: 80vh;
+	width: 60%;
+	background: olivedrab;
+	border: 5px solid darkgreen;
+	position: relative;
+	/* If 'position: relative' is turned off, the '.box' will align relative to the HTML (root) element */
+}
+
+.box {
+	height: 20vh;
+	width: 20vh;
+	background: rgba(255, 99, 71, 0.7);
+	border: 5px solid darkred;
+	position: absolute;
+	top: 40vh;
+	right: 10vh;
+}
