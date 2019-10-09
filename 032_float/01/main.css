@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	font-size: 1.5rem;
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.wrapper {
+	border: 5px solid dodgerblue;
+}
+.picture {
+	background: tomato;
+	color: whitesmoke;
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	/* clear: right; */
+	/* clear: left; */
+	clear: both;
+}
+.text {
+	padding: 20px;
+}
+
+#clear-pic {
+	background: olivedrab;
+}
+
+.overflow {
+	overflow: auto;
+}

@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	font-size: 1.5rem;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.wrapper {
+	border: 5px solid dodgerblue;
+}
+.picture {
+	background: tomato;
+	color: whitesmoke;
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right {
+	float: right;
+}
+.text {
+	padding: 20px;
+}
+
+.overflow {
+	overflow: auto;
+	/* Without 'overflow: auto', the image will float out of the DOM flow and the '.wrapper' will take the size of the text content, making the picture div go beyond it. */
+}
