@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+
+  HARDWARE PIXEL: A physical pixel on the display (or the lightbulbs that go on an off on the screen). For example, an iPhone 5 has a screen with 640 horizontal hardware pixels.
+
+  DEVICE-INDEPENDENT PIXEL (dip): A scaling of device pixels to match a uniform reference pixel at normal viewing distance, which should be approximately the same size on all devices. An iPhone 5 is 320dips wide.
+
+  CSS PIXEL: The unit used for page layout controlled by the viewport. Pixel dimensions in styles such as 'width: 100px' are specified in CSS Pixels. The ratio of CSS pixels to device independent pixels is the page scale factor, or zoom (see <meta name="viewport"> tag attribute 'content=initial-scale=1.0').
+
+  The difference between dips and hardware pixels define the pixel density of the device. For every dip in the iPhone 5, there are 2 hardware pixels. This results in a sharper display definition. This is what Retina Displays are all about (higher pixel densities).
+
+  For more information, check sources below:
+
+  https://developers.google.com/web/fundamentals/design-and-ux/responsive
+
+  https://juiceboxinteractive.com/blog/a-pixel-is-not-a-pixel-designing-for-a-new-generation-of-mobile-devices/
+
+  https://webplatform.github.io/docs/tutorials/understanding-css-units/
+
+ -->
+
+  <title>Meta Viewport</title>
+  <link rel="stylesheet" href="vp-set.css">
+</head>
+
+<body>
+
+  <article role="main">
+    <h1><code>viewport</code> set</h1>
+
+    <p>
+      This page <b>DOES</b> have the <code>meta
+        viewport</code> set.
+    </p>
+
+    <h2>The width on this page matches the device independent pixels of the device.</h2>
+
+    <p>
+      This is a test to show how the <code>meta viewport</code> tag
+      affects a page.
+    </p>
+
+    <p>
+      <b>Note:</b> each box on the background is 50px wide.
+    </p>
+  </article>
+
+</body>
+
+</html>
