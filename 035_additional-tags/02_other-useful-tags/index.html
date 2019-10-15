@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Other Useful Tags</title>
+</head>
+
+<body>
+  <ul>
+    <li>&lt;abbr&gt;</li>
+    <li>&lt;code&gt;</li>
+    <li>&lt;kbd&gt;</li>
+    <li>&lt;samp&gt;</li>
+    <li>&lt;pre&gt;</li>
+    <li>&lt;var&gt;</li>
+  </ul>
+
+  <p>The <strong>&lt;abbr&gt;</strong> tag is used when you write an abbreviation or acronym, such as <abbr
+      title="HyperText Markup Language">HTML</abbr> or <abbr title="Central Intelligence Agency">CIA</abbr>. The
+    <strong>&lsqb;title&rsqb;</strong> attribute specifies the long description of the abbreviation or acronym and it's
+    shown to the
+    user
+    by default on mouse hover</p>
+
+  <p>The <strong>&lt;code&gt;</strong> tag is used to represent and display computer code in the markup. For example,
+    you can represent
+    <code>console.log('Hello World!')</code>. This tag gets default user agent styles that sets the font to monospace.
+  </p>
+
+  <p>The <strong>&lt;kbd&gt;</strong> tag is used to represent keybord input the user should be prompter to type. For
+    example: Press
+    <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.</p>
+
+  <p>The <strong>&lt;samp&gt;</strong> tag is used to represent sample output to be displayed to the user. For example:
+  </p>
+
+  <div class="wrapper">
+    <p>I was trying to boot my computer, but I got this hilarious message:</p>
+    <p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+  </div>
+
+  <p>The &lt;pre&gt; tag is used to represent pre-formatted text. The text inside this tag will be displayed in the page
+    exactly as written in the <abbr title="HyperText Markup Language">HTML</abbr> document. For example:</p>
+
+  <div class="wrapper">
+    <pre>
+      <code>
+        /* This is how to declare a variable
+        and store an array of numbers in it. */
+
+        let myArr = [1, 2, 3];</code>
+        <!-- I can use the <code> inside the <pre> tag, but not the other way around. -->
+              I can put tabs
+
+                  and they will
+
+                      show exactly
+
+                          as I type them.
+
+                            in the HTML.
+
+              So this is
+
+                  pretty useful
+
+                in some use cases.
+    </pre>
+  </div>
+
+  <p>The &lt;var&gt; tag is used to represent the name of a variable in a mathematical expression or a programming
+    context. It's typically presented using an italicized version of the current typeface, although that behavior is
+    browser-dependent. For example: </p>
+
+  <div class="wrapper">
+    <p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length,
+      <var>w</var> the width and <var>h</var> the height of the box.</p>
+  </div>
+
+</body>
+
+</html>
