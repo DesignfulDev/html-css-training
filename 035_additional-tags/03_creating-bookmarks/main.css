@@ -2,6 +2,12 @@ html {
 	scroll-behavior: smooth; /* THIS IS AWESOME! */
 }
 
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body {
 	width: 1000px;
 	border: 10px solid #bbb;
