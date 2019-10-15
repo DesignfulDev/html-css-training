@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Quoting and Citing</title>
+</head>
+
+<body>
+
+  <h1>Quoting & Citing</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, explicabo debitis illum, libero architecto
+    sapiente corrupti mollitia distinctio velit, molestiae amet natus similique quo voluptates aut excepturi. Omnis
+    dolore aperiam itaque ad provident, alias tenetur reprehenderit temporibus necessitatibus architecto sed placeat, in
+    natus rerum corporis ullam labore eveniet fugiat fuga voluptatem quisquam. Nesciunt iste aliquid, laboriosam aut,
+    fuga pariatur ea a maiores est possimus, inventore veritatis deleniti. <q class="inline-quote"
+      cite="https://en.wikipedia.org/wiki/Lorem_ipsum">Consectetur vel
+      praesentium</q>, fugit
+    <!-- The <q> element adds by default opening ang closing quotes using ::before and ::after pseudo-ement rulesets that sets the properties 'content: open-quote' and 'content: close-quote', respectively -->
+    sint
+    consequatur aliquid expedita alias nobis deleniti sed deserunt impedit incidunt perferendis nam non enim illo
+    exercitationem, blanditiis, aut dolorem porro quaerat numquam possimus. Asperiores dolores suscipit soluta incidunt?
+  </p>
+  <blockquote class="blockquote" cite="https://www.lipsum.com/">
+    <!-- the [cite] attribute is used to give the source of a citation in a <q> or <blockquote>. It doesn't appear directly to the user on the page, only if the page source is displayed. The [cite] attribute is used primarily by search engines to better rank pages, so it's good SEO practice -->
+    <h2>Block Quote</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur magnam cumque, cum beatae accusantium
+      officia quaerat ex, laboriosam doloremque nihil sequi itaque maiores quod unde odit, dolore laudantium atque iste
+      dolores! Ipsam ea placeat odio vitae quam harum quae. Molestias alias rem aliquid. Magnam quasi perferendis
+      deleniti inventore adipisci dolorum.</p>
+  </blockquote>
+  <p>My favorite film is <cite class="citation">Blade Runner</cite>, by Ridley Scott</p>
+  <!-- The <cite> element is used to cite a creative work. It has some default user agent styles. It's also used by search engines to better rank pages on the web, so it's also good SEO practice -->
+</body>
+
+</html>
