@@ -1,0 +1,29 @@
+body {
+	width: 1000px;
+	border: 2px solid black;
+	font-size: 150%;
+}
+
+.google {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.menu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.menu li {
+	list-style: none;
+	padding: 1rem;
+	border: 1px solid #bbb;
+	margin: 1rem;
+	border-radius: 5px;
+}
+
+.menu li:hover {
+	background-color: #bbb;
+}
