@@ -1,10 +1,16 @@
+html {
+	scroll-behavior: smooth; /* THIS IS AWESOME! */
+}
+
 body {
 	width: 1000px;
-	border: 2px solid black;
+	border: 10px solid #bbb;
 	font-size: 150%;
+	margin: 0 auto;
 }
 
 .google {
+	display: block;
 	width: 200px;
 	height: 200px;
 	margin: 0 auto;
@@ -18,12 +24,38 @@ body {
 
 .menu li {
 	list-style: none;
-	padding: 1rem;
 	border: 1px solid #bbb;
 	margin: 1rem;
 	border-radius: 5px;
+	display: flex;
+	align-items: stretch;
 }
 
-.menu li:hover {
-	background-color: #bbb;
+.menu a {
+	padding: 1rem;
+	text-decoration: none;
+	color: #555;
+}
+
+.menu a:hover {
+	background-color: lightskyblue;
+	color: whitesmoke;
+}
+
+h1 {
+	background-color: dodgerblue;
+	color: whitesmoke;
+	text-align: center;
+	font-variant: small-caps;
+	line-height: 1.5em;
+}
+
+a[href='#top'] {
+	display: block;
+	text-align: center;
+}
+
+a[href='#top'] + p {
+	padding: 0 2rem;
+	color: #555;
 }
