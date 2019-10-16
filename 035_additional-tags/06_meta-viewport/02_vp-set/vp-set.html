@@ -23,6 +23,20 @@
 
   https://webplatform.github.io/docs/tutorials/understanding-css-units/
 
+
+  Todd McLeod's description:
+
+  With the “content” attribute we can set the “initial-scale=1” value. This value maps css pixels to device independent pixels. There are three categories we talk about when talking about pixels: physical pixels, device independent pixels, and css pixels.
+
+    1) physical pixels: the pixels that are physically built into a device.
+
+    2) device independent pixels: Some devices have a high pixel densities. This means that they might be 1000 physical pixels in width, but only show 500 pixels to the user. In such a device, for every “device independent pixel” that they show to the user, there are 2 physical pixels making up that 1 “pixel” being shown to the user.
+
+    3) css pixels :As developers, the pixels we use to create our websites are known as “css pixels”. We map our css pixels to device independent pixels with the “initial-scale=1” value. This means that every one of our css pixels will take up one device independent pixel. If we had an “initial-scale=2” setting, each one of our css pixels would take up 2 device independent pixels.
+
+    Source:
+    https://docs.google.com/document/d/1aBzcpuPE8iFxtrb9JUDgsNPt1Clr_B4V36pnzHc-KYE/edit?usp=sharing
+
  -->
 
   <title>Meta Viewport</title>
