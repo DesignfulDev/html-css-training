@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+/* .fas {
+	font-size: 5rem;
+	margin: 2rem;
+	color: #555;
+} */
+
+.svg-inline--fa path {
+	fill: red;
+	/* stroke: rebeccapurple; */
+}
+
+svg {
+	border: 2px solid hotpink;
+}
+
+body {
+	border: 2px solid green;
+}
+
+.svg-inline--fa {
+	width: 500px;
+}
