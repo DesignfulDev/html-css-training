@@ -29,3 +29,9 @@ svg {
 	stroke: maroon;
 	stroke-width: 5px;
 }
+
+#fett-path:hover {
+	fill: goldenrod;
+	stroke: deeppink;
+	transform: scale(0.9);
+}
