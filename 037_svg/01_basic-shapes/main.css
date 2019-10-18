@@ -1,0 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+svg {
+	border: 2px dashed #aaa;
+	background-color: #eee;
+	color: #1e90ff;
+}
