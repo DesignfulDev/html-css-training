@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	border: 2px solid hotpink;
+	max-width: 500px;
+	display: flex;
+	justify-content: center;
+}
+
+svg {
+	border: 2px dashed #aaa;
+	background-color: #eee;
+}
+
+/* use the SVG [id] to style the [viewBox] */
+
+#fett-svg {
+	width: 70%;
+}
+
+/* use the path [id] to style 'fill' and 'stroke'  */
+
+#fett-path {
+	fill: firebrick;
+	stroke: maroon;
+	stroke-width: 5px;
+}
