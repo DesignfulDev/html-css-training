@@ -8,3 +8,9 @@ svg {
 	background-color: #eee;
 	color: #1e90ff;
 }
+
+.box {
+	background-color: tomato;
+	color: white;
+	font-size: 150%;
+}
