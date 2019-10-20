@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Stacked SVG's</title>
+</head>
+
+<body>
+  <h1>Stacked SVG's</h1>
+  <!-- You can put more multiple <use> tags inside a single <svg>. They will stack on top of each other, from top to bottom. -->
+  <svg>
+    <use xlink:href="svg/icons.svg#check"></use>
+    <use xlink:href="svg/icons.svg#circle-thin"></use>
+  </svg>
+
+
+  <!-- If you intend to use the same stack of <symbol>'s more than once, you can write the <symbol> tag in the SVG file with all paths stacked, and call them when you need on the HTML with the <use> tag. -->
+  <svg>
+    <use xlink:href="svg/icons.svg#checked"></use>
+  </svg>
+
+</body>
+
+</html>
