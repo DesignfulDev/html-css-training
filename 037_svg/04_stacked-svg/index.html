@@ -12,14 +12,18 @@
 <body>
   <h1>Stacked SVG's</h1>
   <!-- You can put more multiple <use> tags inside a single <svg>. They will stack on top of each other, from top to bottom. -->
-  <svg>
+  <svg class="checked c01" viewBox="0 0 100 100">
     <use xlink:href="svg/icons.svg#check"></use>
     <use xlink:href="svg/icons.svg#circle-thin"></use>
   </svg>
 
 
-  <!-- If you intend to use the same stack of <symbol>'s more than once, you can write the <symbol> tag in the SVG file with all paths stacked, and call them when you need on the HTML with the <use> tag. -->
-  <svg>
+  <!-- If you intend to <use> the same stacked <symbol>'s repeatedly, you can write them once in the SVG file with all paths already stacked, and <use> them whenever you need on the HTML. -->
+  <svg class="checked c02" viewBox="0 0 100 100">
+    <use xlink:href="svg/icons.svg#checked"></use>
+  </svg>
+
+  <svg class="checked c03" viewBox="0 0 100 100">
     <use xlink:href="svg/icons.svg#checked"></use>
   </svg>
 
