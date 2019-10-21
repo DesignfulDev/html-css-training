@@ -11,7 +11,7 @@ body {
 	align-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	height: 100vh;
+	/* height: 100vh; */
 	font-family: 'Lato', sans-serif;
 	font-size: 2rem;
 	color: #777;
@@ -24,15 +24,28 @@ h1 {
 }
 
 .checked {
-	width: 100%;
-	stroke-width: 0.3%;
+	width: 40%;
+	fill: transparent;
+	stroke: firebrick;
 }
-
+.checked:hover {
+	fill: pink;
+}
 .c01 {
-	fill: darkkhaki;
-	stroke: black;
-	color: darkslategray;
+	stroke-width: 0.2%;
 }
-.c01:hover {
-	fill: darkslategray;
+.c02 {
+	stroke-width: 0.4%;
+}
+.c03 {
+	stroke-width: 0.8%;
+}
+.c04 {
+	stroke-width: 1.6%;
+	fill: pink;
+}
+.c04:hover {
+	fill: crimson;
+	stroke: maroon;
+	stroke: darkolivegreen;
 }
