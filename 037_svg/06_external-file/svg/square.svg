@@ -1,0 +1,11 @@
+
+
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  class="svg-file-class"
+  viewBox="0 0 100 100">
+
+    <rect x="5" y="5" rx="10" ry="10" width="90" height="90" fill="pink" stroke="blueviolet" stroke-opacity=".6"/>
+
+</svg>

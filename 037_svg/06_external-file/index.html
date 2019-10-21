@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Testing Out SVGs - AGAIN!</title>
+</head>
+
+<body>
+
+  <!-- Loading SVG's from external resource is not working when I open the HTML as a local file:///, only when I run it on a 'localhost' live server. The only exception is when I invoke the resource as an <img>, instead of <symbol> + <use> -->
+
+  <!-- What I found out on the Network tab of CDT is that the 'icons.svg' file is getting status '200' when loaded from 'localhost' and '(blocked:origin)' when loaded from file:/// -->
+
+  <!-- This item will show ONLY on 'localhost' -->
+  <svg class="svg-use" viewBox="0 0 100 100">
+    <use href="svg/icons.svg#symbol-id"></use>
+  </svg>
+
+  <!-- This item will show BOTH on 'localhost' and local file:/// -->
+  <img src="svg/square.svg" alt="pink-square">
+
+  <!-- This item will show BOTH on 'localhost' and local file:/// -->
+  <svg viewBox="0 0 80 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="#myGrid" style="opacity:1.0" />
+    <use xlink:href="#myDot" x="35" y="5" style="opacity:0.6" />
+    <use xlink:href="#myDot" x="50" y="5" style="opacity:0.4" />
+    <use xlink:href="#myDot" x="65" y="5" style="opacity:0.2" />
+  </svg>
+
+  <!-- This item will show ONLY on 'localhost' -->
+  <svg viewBox="0 0 80 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="svg/icons.svg#fileGrid" style="opacity:1.0" />
+    <use xlink:href="svg/icons.svg#fileDot" x="35" y="5" style="opacity:0.6" />
+  </svg>
+
+
+  <!-- MDN code starts here -->
+  <!-- I added <symbol> around the grid to invoke its <use> instead of drawing it directly -->
+
+  <svg viewBox="0 0 80 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!-- This item will show BOTH on 'localhost' and local file:/// -->
+    <!-- All instances of our symbol -->
+    <use xlink:href="#myGrid" style="opacity:1.0" />
+    <use xlink:href="#myDot" x="5" y="5" style="opacity:1.0" />
+    <use xlink:href="#myDot" x="20" y="5" style="opacity:0.8" />
+    <use xlink:href="#myDot" x="35" y="5" style="opacity:0.6" />
+    <use xlink:href="#myDot" x="50" y="5" style="opacity:0.4" />
+    <use xlink:href="#myDot" x="65" y="5" style="opacity:0.2" />
+
+    <!-- Our symbol in its own coordinate system -->
+    <symbol id="myDot" width="10" height="10" viewBox="0 0 2 2">
+      <circle cx="1" cy="1" r="1" />
+    </symbol>
+
+    <!-- A grid to materialize our symbol positioning -->
+    <symbol id="myGrid" viewBox="0 0 80 20">
+      <path d="M0,10 h80 M10,0 v20 M25,0 v20 M40,0 v20 M55,0 v20 M70,0 v20" fill="none" stroke="pink" />
+    </symbol>
+
+  </svg>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
+
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg">
+
+  <rect x="5" y="5" rx="10" ry="10" width="90" height="90" fill="goldenrod" stroke="darkcyan" stroke-opacity=".6"/>
+
+  <symbol id="symbol-id" viewBox="0 0 100 100">
+    <rect x="5" y="5" rx="10" ry="10" width="90" height="90" fill="pink" stroke="blueviolet" stroke-opacity=".6"/>
+  </symbol>
+
+  <!-- Our symbol in its own coordinate system -->
+  <symbol id="fileDot" width="10" height="10" viewBox="0 0 2 2">
+    <circle cx="1" cy="1" r="1" />
+  </symbol>
+
+  <!-- A grid to materialize our symbol positioning -->
+  <symbol id="fileGrid" viewBox="0 0 80 20">
+    <path d="M0,10 h80 M10,0 v20 M25,0 v20 M40,0 v20 M55,0 v20 M70,0 v20" fill="none" stroke="pink" />
+  </symbol>
+
+</svg>

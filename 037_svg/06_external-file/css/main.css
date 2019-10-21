@@ -1,0 +1,23 @@
+svg {
+	border: 2px solid dodgerblue;
+	/* color: blue; */
+	fill: brown;
+	/* stroke: tomato; */
+	/* stroke-width: 2px; */
+}
+
+.svg-use {
+	color: blue;
+	fill: brown;
+	stroke: tomato;
+	border: 2px solid yellowgreen;
+	width: 50%;
+}
+
+img {
+	color: blue;
+	fill: brown;
+	stroke: tomato;
+	border: 2px solid fuchsia;
+	width: 70%;
+}
