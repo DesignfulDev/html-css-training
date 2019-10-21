@@ -9,14 +9,18 @@ svg {
 }
 
 .icons {
-	color: #aaa; /* 'fill' is not working; don't know why */
+	fill: #aaa;
 	stroke: blue;
 	stroke-width: 15px;
 	stroke-opacity: 0.3;
 }
+.icons:hover {
+	fill: #888;
+	stroke: none;
+}
 
 .social-media {
-	color: #3d8341;
+	fill: #3d8341;
 	opacity: 0.5;
 }
 
