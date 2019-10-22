@@ -1,0 +1,31 @@
+.bg-img {
+	background-image: url('../img/old-city.jpg');
+	background-position: top;
+}
+
+.site-title {
+	text-align: right;
+	padding: 0 0.5em;
+	font-size: 5.5vw;
+}
+
+.cta-btn {
+	margin-top: 3rem;
+}
+
+.headline {
+	font-size: 4.5vw;
+}
+.main-message {
+	font-size: 3vw;
+}
+
+.cta-btn {
+	background-color: #db37c0;
+	color: #f0f8ff;
+}
+.cta-btn:hover {
+	background-color: #d186c5;
+	color: #000;
+	box-shadow: 0 0 15px 5px #fff;
+}

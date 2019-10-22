@@ -1,0 +1,65 @@
+body {
+	font-family: 'Cantarell';
+}
+.bg-img {
+	background-image: url('../img/nyc-avenue.jpg');
+	background-size: cover;
+	background-position: bottom;
+}
+
+.above-fold {
+	background-color: #ffffff44;
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-around;
+	text-align: center;
+}
+.above-fold > * {
+	width: 100%;
+}
+.site-title,
+.headline {
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+.headline {
+	font-size: 6vw;
+}
+.site-title {
+	color: #2d2d2d;
+	font-size: 7.5vw;
+	font-weight: bold;
+}
+.headline-wrapper {
+	background-color: #00000055;
+	color: #f0f8ff;
+	padding: 1.5rem 0;
+}
+
+.main-message {
+	font-variant: small-caps;
+	font-size: 4vw;
+}
+.btn-wrapper {
+	display: flex;
+	justify-content: center;
+}
+.cta-btn {
+	width: auto;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	background-color: #f0f8ff;
+	color: #444;
+	transform: scale(1);
+	transition: ease-in-out 0.05s;
+	font-size: 1.5rem;
+}
+
+.cta-btn:hover {
+	background-color: #444;
+	color: #f0f8ff;
+	box-shadow: 0 0 15px #fff;
+	transform: scale(1.2);
+	transition: ease-in-out 0.05s;
+}
