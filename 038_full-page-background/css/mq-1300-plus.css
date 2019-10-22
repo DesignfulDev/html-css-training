@@ -5,54 +5,6 @@
 
 .site-title {
 	text-align: center;
-	font-size: 7.5vw;
+	font-size: 6.5vw;
 	margin-bottom: 0.5em;
-}
-
-/* Navigation Styling */
-
-.nav-bar {
-	background-color: #00000055;
-	color: #f0f8ff;
-	position: fixed;
-	top: 0;
-	left: 0;
-	/* Because 'position' is set to 'fixed', the element is out of the normal document flow, so it doesn't know how to size itself. You need to specify 'height' and 'width'. */
-	height: fit-content;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-.menu {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: fit-content;
-}
-.menu-item {
-	padding: 0.5rem 1.5rem;
-	margin: 0 0.2rem;
-	border-radius: 5px;
-	transition-timing-function: ease-in-out;
-	transition-duration: 0.2s;
-}
-.menu-item:hover {
-	background-color: #dddddd55;
-	color: #555;
-	transition-timing-function: ease-in-out;
-	transition-duration: 0.2s;
-}
-.logo {
-	display: flex;
-	align-items: center;
-	font-size: 1.5rem;
-	font-variant: small-caps;
-}
-.logo-icon {
-	margin: 0 1rem;
-	font-size: 1.1rem;
-}
-
-.content {
-	height: 150vh;
 }

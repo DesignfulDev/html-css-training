@@ -29,3 +29,18 @@
 	color: #000;
 	box-shadow: 0 0 15px 5px #fff;
 }
+
+/* Navigation Styling */
+.nav-bar {
+	height: fit-content;
+	justify-content: space-between;
+}
+.menu {
+	display: flex;
+}
+.logo-icon {
+	display: flex;
+}
+.mobile-menu {
+	display: none;
+}
