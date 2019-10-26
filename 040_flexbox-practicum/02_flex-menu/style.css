@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 5vw;
+	color: #555;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper {
+	flex-grow: 1;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-grow: 1;
+	border-bottom: 0.05rem solid lightgray;
+}
+
+.menu-item {
+	flex-grow: 1;
+	text-align: center;
+	padding: 0.2rem 0.5rem;
+	border-bottom: 0.1rem solid transparent;
+}
+
+.menu-item:hover {
+	border-bottom: 0.1rem solid firebrick;
+}
