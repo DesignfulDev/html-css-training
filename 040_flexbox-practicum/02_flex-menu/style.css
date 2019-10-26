@@ -36,3 +36,10 @@ body {
 .menu-item:hover {
 	border-bottom: 0.1rem solid firebrick;
 }
+
+.menu-item,
+.menu-item:hover {
+	transition-property: border;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in;
+}
