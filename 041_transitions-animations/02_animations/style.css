@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.icon {
+	height: 50px;
+	color: #aaa;
+}
+
+/* Animation properties */
+
+/*
+
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction
+animation-fill-mode
+animation-play-state
+
+*/
+
+/* Swipe Up */
+
+.angle-double-up {
+	animation-name: angleUp;
+	animation-duration: 500ms;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+}
+
+@keyframes angleUp {
+	0% {
+		transform: translateY(30px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Arrow */
+
+.arrow-alt-circle-right {
+	animation-name: arrow-flip;
+	animation-duration: 500ms;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+}
+
+@keyframes arrow-flip {
+	100% {
+		transform: rotateZ(180deg);
+	}
+}
+
+/* Circle Loader */
+
+.circle-notch {
+	animation-name: circle-notch;
+	animation-duration: 800ms;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+@keyframes circle-notch {
+	0% {
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+/* Cog in the System */
+
+.cog {
+	height: 100px;
+	animation-name: circle-notch;
+	animation-duration: 3000ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.cog-reverse {
+	height: 100px;
+	animation-name: circle-notch;
+	animation-duration: 3000ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	position: absolute;
+	top: 63px;
+	left: 64px;
+}
+
+/* Targeting */
+
+.crosshairs {
+	animation-name: targeting;
+	animation-duration: 2000ms;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	/* animation-fill-mode: forwards; */
+	color: firebrick;
+	position: absolute;
+}
+
+@keyframes targeting {
+	0% {
+		transform: translate(50%, 300%);
+	}
+	25% {
+		transform: translate(200%, 50%);
+	}
+	50% {
+		transform: translate(500%, 1200%);
+	}
+	75% {
+		transform: translate(80%, 600%);
+	}
+	100% {
+		transform: translate(700%, 50%);
+	}
+}
+
+/* Spinner Loader */
+
+.spinner {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	animation-name: circle-notch;
+	animation-duration: 800ms;
+	animation-timing-function: steps(8);
+	animation-delay: 3000ms;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	/* animation-fill-mode */
+	/* animation-play-state */
+}
+
+/* Yin-Yang */
+
+.yin-yang {
+	/* height: 100px; */
+	animation-name: yin-yang;
+	animation-duration: 2000ms;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	position: absolute;
+	top: 40%;
+	left: 25%;
+}
+
+@keyframes yin-yang {
+	100% {
+		left: 75%;
+		transform: rotateZ(720deg);
+	}
+}
