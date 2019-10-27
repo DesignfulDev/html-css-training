@@ -1,0 +1,136 @@
+/* Resets */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 200%;
+}
+
+/* Above the Fold */
+
+.atf {
+	height: 100vh;
+	background-image: url('img/analytics-colored-pencils-coloured-pencils-185576.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	/* justify-content: center; */
+}
+
+.welcome,
+.at-home {
+	color: whitesmoke;
+	width: 100%;
+	text-align: center;
+	/* border: 2px solid hotpink; */
+}
+
+.welcome {
+	margin-top: 20vh;
+	font-variant: small-caps;
+}
+
+.at-home {
+	margin-top: 2vh;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* Saving Section */
+
+.save-wrapper {
+	color: #777;
+	display: flex;
+	justify-content: space-between;
+	height: 2rem;
+}
+
+.saving {
+	display: flex;
+	align-items: center;
+}
+
+.spinner {
+	height: 32px;
+	width: 32px;
+	margin-right: 0.3rem;
+	margin-left: 0.5rem;
+	animation-name: spin;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.dot {
+	margin: 0 0.05rem;
+	animation-name: blink;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+.dot1 {
+	animation-delay: 100ms;
+}
+.dot2 {
+	animation-delay: 200ms;
+}
+.dot3 {
+	animation-delay: 300ms;
+}
+
+/* Animations */
+
+@keyframes spin {
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes blink {
+	0% {
+		color: transparent;
+	}
+	100% {
+		color: inherit;
+	}
+}
+
+/* Buttons */
+
+.button-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	font-size: 0.7rem;
+	padding: 0.2rem 0.7rem;
+	margin-right: 0.5rem;
+	border: 0;
+	border-radius: 5px;
+}
+
+.save {
+	background-color: deepskyblue;
+	color: white;
+}
+.save:hover {
+	background-color: dodgerblue;
+}
+
+.reset {
+	background-color: unset;
+	color: deepskyblue;
+}
+.reset:hover {
+	color: dodgerblue;
+}
