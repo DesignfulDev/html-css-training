@@ -1,0 +1,50 @@
+/* Resets */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 200%;
+	color: #999;
+}
+
+/* Above the Fold */
+
+.atf {
+	height: 100vh;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.icon {
+	height: 300px;
+	color: steelblue;
+}
+
+.welcome {
+	margin: 0.3em 0;
+	font-variant: small-caps;
+}
+.message {
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.btn {
+	font-size: 0.7rem;
+	padding: 0.5rem 1rem;
+	margin-top: 1rem;
+	background-color: steelblue;
+	color: white;
+	border-radius: 1rem;
+	border: none;
+}
+
+.btn:hover {
+	background-color: lightskyblue;
+}
