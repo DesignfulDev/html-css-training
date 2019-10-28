@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 200%;
+}
+
+.atf {
+	display: flex;
+}
+
+.menu-bar {
+	height: 100vh;
+	min-width: 10vw;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+	border: 1px solid #ddd;
+}
+
+.menu-bar li:first-child {
+	margin-top: 2rem;
+}
+
+.menu-bar li:nth-child(n + 2) {
+	border-top: 1px solid #ddd;
+}
+
+.main-nav,
+.foot-nav {
+	width: 100%;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	font-family: sans-serif;
+	color: dodgerblue;
+}
+
+.main-menu-item,
+.foot-menu-item {
+	padding: 0.5rem 1rem;
+}
+
+.main-menu-item:hover,
+.foot-menu-item:hover {
+	background-color: #eee;
+}
+
+.content {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-variant: small-caps;
+}
