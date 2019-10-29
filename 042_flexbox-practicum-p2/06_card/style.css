@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 200%;
+	font-family: 'Lato', sans-serif;
+	color: steelblue;
+}
+
+body {
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+}
+
+body,
+.card,
+.card * {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.card {
+	max-width: 11rem;
+	border: 1px solid #d3d3d3aa;
+	border-radius: 8px;
+}
+
+.card * {
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.icon {
+	height: 8rem;
+	margin-top: 1rem;
+	color: #506886aa;
+}
+
+.icon,
+.label,
+.price {
+	padding: 0.5rem 0;
+}
+
+.price {
+	background-color: #d3d3d355;
+	font-weight: bold;
+}
+
+.price:hover {
+	background-color: #d3d3d3aa;
+}
