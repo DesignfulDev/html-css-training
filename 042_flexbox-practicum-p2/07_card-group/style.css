@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 200%;
+	font-family: 'Lato', sans-serif;
+	color: steelblue;
+}
+
+body {
+	height: 100vh;
+	align-content: center;
+	justify-content: center;
+}
+
+.card-group {
+	border: 1px solid #d3d3d3aa;
+	border-radius: 8px;
+}
+
+body,
+.card-group,
+.card,
+.card * {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.card-group {
+	flex-wrap: nowrap;
+}
+
+.card {
+	max-width: 11rem;
+}
+
+.card.paper-plane,
+.card.plane {
+	border-right: 1px solid #d3d3d3aa;
+}
+
+.card * {
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.icon {
+	height: 8rem;
+	margin-top: 1rem;
+	color: #506886aa;
+}
+
+.icon,
+.label,
+.price {
+	padding: 0.5rem 0;
+}
+
+.price {
+	background-color: #d3d3d355;
+	font-weight: bold;
+}
+
+.price:hover {
+	background-color: #d3d3d3aa;
+}
