@@ -1,0 +1,115 @@
+/* Resets */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+	font-size: 200%;
+	font-family: 'Lato', sans-serif;
+	font-variant: small-caps;
+	color: whitesmoke;
+}
+
+body {
+	height: 100vh;
+	background-image: url('img/board-game-challenge-checkmate-139392.jpg');
+	background-size: cover;
+	background-position: top 0 left 50%;
+	perspective: 50rem;
+}
+
+.sidebar {
+	background-color: rgba(178, 34, 34, 0.8);
+	padding-top: 5rem;
+	display: flex;
+	width: 10rem;
+	height: 100%;
+	box-shadow: 0 10px 15px 15px #fafafa55;
+	position: fixed;
+	left: -50rem;
+	transition-property: all;
+	transition-duration: 500ms;
+	transition-timing-function: ease-in-out;
+}
+
+.menu {
+	flex-grow: 1;
+	list-style: none;
+	padding: 0 0.5rem;
+}
+
+.menu-item {
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.menu-icon {
+	width: 100px;
+	height: 100px;
+	padding: 0.5rem;
+	border-radius: 50%;
+	display: flex;
+	background-color: #ffffff55;
+}
+
+.menu-item,
+.menu-icon {
+	color: whitesmoke;
+	box-shadow: none;
+	transform: scale(1);
+	transition-property: all;
+	transition-duration: 100ms;
+	transition-timing-function: ease-in-out;
+}
+
+.menu-item:hover,
+.menu-icon:hover {
+	background-color: #ffffff55;
+	box-shadow: 0px 0px 10px 0 #fafafa55;
+	transform: scale(1.05);
+	transition-property: all;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in-out;
+}
+
+#btn {
+	height: fit-content;
+	display: flex;
+	border-radius: 50%;
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	z-index: 1;
+	transition-property: all;
+	transition-duration: 500ms;
+	transition-delay: 20ms;
+	transition-timing-function: ease-in-out;
+	animation-name: pop;
+	animation-duration: 500ms;
+	animation-iteration-count: 5;
+	animation-timing-function: ease-out;
+}
+
+#show-menu {
+	display: none;
+}
+
+#show-menu[type='checkbox']:checked ~ .sidebar {
+	left: 0;
+}
+
+#show-menu[type='checkbox']:checked ~ #btn {
+	transform: rotateY(180deg);
+}
+
+@keyframes pop {
+	0% {
+		transform: translateX(-2.5rem);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
