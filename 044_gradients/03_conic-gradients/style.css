@@ -15,11 +15,13 @@ body {
 	margin: 1rem 0;
 }
 
+/* To create nicer effects with Conic Gradient, start and finish the gradient with the same color after going through the palett */
+
 .box1 {
 	width: 400px;
 	height: 400px;
 	border-radius: 2rem;
-	background-image: conic-gradient(steelblue, royalblue);
+	background-image: conic-gradient(royalblue, lawngreen, royalblue);
 }
 
 .box2 {
@@ -27,7 +29,7 @@ body {
 	height: 400px;
 	border-radius: 2rem;
 	background-image: conic-gradient(
-		steelblue,
+		dodgerblue,
 		crimson,
 		gold,
 		olivedrab,
