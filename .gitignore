@@ -41,6 +41,8 @@ bower_components/
 .sass-cache
 builds/**/images/*
 *.ogg
+*.ogv
+*.oga
 *.mp3
 *.mp4
 *.webm
