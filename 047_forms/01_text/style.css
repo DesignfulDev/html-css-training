@@ -33,3 +33,30 @@ body {
 	font-size: 0.9rem;
 	color: #b2222277;
 }
+.btn-wrapper {
+	/* border: 2px solid black; */
+	display: flex;
+	justify-content: center;
+	margin: 0.5rem 0;
+}
+.btn {
+	width: fit-content;
+	padding: 0.8rem 1.5rem;
+	font-size: 1rem;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	border-radius: 3rem;
+	border: none;
+	background-color: firebrick;
+	color: #fff;
+	box-shadow: 2px 2px 15px 2px darkred;
+	transition-property: all;
+	transition-duration: 150ms;
+}
+
+.btn:hover {
+	background-color: crimson;
+	box-shadow: none;
+	transition-property: all;
+	transition-duration: 150ms;
+}
