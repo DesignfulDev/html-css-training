@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Working with Forms</title>
+
+</head>
+
+<body>
+
+  <section class="forms">
+
+    <!-- >>= SUMMARY =<< -->
+
+    <!-- >>- FORM ELEMENTS -<< -->
+
+    <!-- <fieldset></fieldset> -->
+    <!-- ...<legend></legend> -->
+    <!-- <label></label> -->
+    <!-- ...<input> -->
+    <!-- <meter></meter> -->
+    <!-- <output></output> -->
+    <!-- <progress></progress> -->
+
+
+    <!-- >>- INPUT TYPES BY GROUP -<< -->
+
+    <!-- >- TEXT-LIKE form inputs -< -->
+
+    <!-- <input type="email"> -->
+    <!-- <input type="number"> -->
+    <!-- <input type="password"> -->
+    <!-- <input type="search"> -->
+    <!-- <input type="text"> -->
+    <!-- <input type="url"> -->
+    <!-- <textarea></textarea> -->
+
+    <!-- >- PRE-FORMATED form inputs -< -->
+
+    <!-- <input type="date"> -->
+    <!-- <input type="datetime-local"> -->
+    <!-- <input type="month"> -->
+    <!-- <input type="tel"> -->
+    <!-- <input type="time"> -->
+    <!-- <input type="week"> -->
+    <!-- <datalist></datalist> -->
+    <!-- ...<option></option> -->
+    <!-- <select></select> -->
+    <!-- ...<optgroup></optgroup> -->
+    <!-- ...<option></option> -->
+
+    <!-- >- INTERACTIVE CONTROL form inputs -< -->
+
+    <!-- <input type="checkbox"> -->
+    <!-- <input type="color"> -->
+    <!-- <input type="file"> -->
+    <!-- <input type="radio"> -->
+    <!-- <input type="range"> -->
+
+    <!-- >- BUTTON-LIKE form inputs -< -->
+
+    <!-- <input type="button"> -->
+    <!-- <input type="image"> -->
+    <!-- <input type="reset"> -->
+    <!-- <input type="submit"> -->
+    <!-- <button></button> -->
+
+    <!-- >- OTHER form inputs -< -->
+
+    <!-- <input type="hidden"> -->
+
+    <form action="/" method="POST" class="form form01">
+
+      <!-- REFERENCE: How to structure an HTML form -->
+      <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form -->
+
+      <!-- <fieldset> is used to group several controls as well as <label>'s within a web form -->
+      <fieldset class="field f01">
+
+        <!-- <legend> represents a caption for the content of its parent <fieldset> -->
+        <legend class="field-legend">User identification</legend>
+
+        <!-- A <label> can be linked to an <input> by the [id]... -->
+        <label for="first-name" class="form-label">First name</label>
+        <input type="text" class="txt-input-field" name="firstName" id="first-name" placeholder="ex: John"
+          title="Enter your first name" autofocus>
+
+        <label for="last-name" class="form-label">Last name</label>
+        <input type="text" class="txt-input-field" name="lastName" id="last-name" placeholder="ex: Smith"
+          title="Enter your last name">
+
+      </fieldset>
+
+      <fieldset class="field f02">
+
+        <legend class="field-legend">User credentials</legend>
+
+        <!-- ...or by wrapping the <input> inside the <label> -->
+        <label class="form-label">
+          Username
+          <input type="text" class="txt-input-field" name="username" placeholder="ex: johnsmith" maxlength="18"
+            minlength="4" title="Create a username of 4-18 characters" required>
+        </label>
+
+        <label class="form-label">
+          Password
+          <input type="password" class="txt-input-field" name="password" placeholder="ex: 2kyI%YmPceOZ" maxlength="32"
+            minlength="8" title="Create a password of 8-32 characters" required>
+        </label>
+
+        <!-- ! IMPORTANT: notice how the second <input> is nested inside the <label> and they need neither an [id], nor a [for] -->
+
+        <!-- However, it is considered best practice for matters of accesibilty and assistive technologies to always include [for] and [id] attributes, even when the <input> is a child of <label> -->
+
+        <!-- DESIGN PATTERNS: Separating the <label> and the <input> as immediate siblings looks better, more modular and easier to maintain -->
+
+      </fieldset>
+
+      <div class="btn-wrapper">
+        <button class=" favorite btn" formtarget="_blank">Send away!</button>
+      </div>
+
+    </form>
+
+  </section>
+
+
+</body>
+
+</html>
