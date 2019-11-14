@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Working with Forms</title>
+
+</head>
+
+<body>
+
+  <section class="forms">
+
+    <!-- *>>= SUMMARY =<<* -->
+
+    <!-- >>- FORM ELEMENTS -<< -->
+
+    <!-- <fieldset></fieldset> -->
+    <!-- ...<legend></legend> -->
+    <!-- <label></label> -->
+    <!-- ...<input> -->
+    <!-- <meter></meter> -->
+    <!-- <output></output> -->
+    <!-- <progress></progress> -->
+
+
+    <!-- >>- INPUT TYPES BY GROUP -<< -->
+
+    <!-- >- TEXT-LIKE form inputs -< -->
+
+    <!-- <input type="email"> -->
+    <!-- <input type="number"> -->
+    <!-- <input type="password"> -->
+    <!-- <input type="search"> -->
+    <!-- <input type="text"> -->
+    <!-- <input type="url"> -->
+    <!-- <textarea></textarea> -->
+
+    <form action="#" method="POST" class="form form01">
+
+      <!-- REFERENCE: How to structure an HTML form -->
+      <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form -->
+
+      <fieldset class="field f01">
+
+        <legend class="field-legend">Text-like form fields</legend>
+
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="txt-input-field" name="email" id="email" placeholder="ex: johnsmith@email.com"
+          title="Enter your email" autofocus>
+
+        <label for="fav-num" class="form-label">Favorite number</label>
+        <input type="number" class="txt-input-field" name="favNum" id="fav-num" placeholder="ex: 42"
+          title="Enter your favorite number">
+
+        <label for="search-bar" class="form-label">Search</label>
+        <input type="search" class="txt-input-field" name="searchQuery" id="search-bar"
+          placeholder="ex: How to write well?" title="Enter a search term">
+
+        <label for="url" class="form-label">URL</label>
+        <input type="url" class="txt-input-field" name="url" id="url" placeholder="ex: https://google.com"
+          title="Enter URL">
+
+        <label for="story" class="form-label">Tell me a story</label>
+        <textarea name="story" id="story" cols="30" rows="20" class="txt-input-field"
+          placeholder="ex: It was dark inside the wolf..."></textarea>
+
+      </fieldset>
+
+      <div class="btn-wrapper">
+        <button class="favorite btn" formtarget="_blank">Send away!</button>
+      </div>
+
+    </form>
+
+  </section>
+
+
+</body>
+
+</html>
