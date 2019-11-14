@@ -11,6 +11,15 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/* Remove border highlighting/ outline on focued elements */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 /* Form Fields */
 
 .form {
@@ -55,7 +64,14 @@ body {
   padding: 0.5rem 0.3rem;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
-  color: #b2222277;
+  color: #444;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.txt-input-field:focus {
+  box-shadow: 0 0 5px 2px #fff;
+  transform: scale(1.02);
 }
 
 /* Button */
