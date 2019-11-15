@@ -121,6 +121,10 @@ button:focus {
   align-items: center;
 }
 
+.file-input {
+  padding: 1rem;
+}
+
 /* Button */
 
 .btn-wrapper {
