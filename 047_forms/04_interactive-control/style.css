@@ -32,7 +32,7 @@ button:focus {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* .form * {
@@ -45,6 +45,7 @@ button:focus {
   border-radius: 0.5rem;
   border: none;
   padding: 1rem 1.5rem;
+  margin: 0.7rem 0;
 }
 .field:nth-child(2) {
   margin-top: 2rem;
@@ -89,7 +90,8 @@ button:focus {
 }
 
 .checkbox-input,
-.color-input {
+.color-input,
+.radio-input {
   margin: 0.2rem 0.5rem;
 }
 
