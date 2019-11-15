@@ -96,7 +96,9 @@ button:focus {
 }
 
 .checkbox-label,
-.color-label {
+.color-label,
+.radio-label,
+.range-label {
   font-size: 1rem;
 }
 
@@ -125,6 +127,27 @@ button:focus {
 
 .file-input {
   padding: 1rem;
+}
+
+.range-input {
+  width: 100%;
+}
+
+.range-input::before,
+.range-input::after {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  top: 1rem;
+}
+
+.range-input::before {
+  content: '0';
+}
+
+.range-input::after {
+  content: '10';
 }
 
 /* Button */
