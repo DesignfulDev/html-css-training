@@ -27,8 +27,9 @@ body {
 .box {
   background-color: #fafafa;
   border: none;
-  box-shadow: -3px -3px 5px 1px #fff, 3px 3px 10px 0 #afafaf,
-    2px 2px 2px 1px #fff inset, -1px -1px 5px 0 #afafaf inset;
+  box-shadow: -3px -3px 5px 1px #fff, 1px 1px 5px -2px #fff inset,
+    2px 2px 2px 1px #fafafa inset, 3px 3px 10px 0 #afafaf,
+    -1px -1px 5px 0 #afafaf inset;
 }
 
 .box {
@@ -50,20 +51,34 @@ body {
   color: #aaa;
   width: 6rem;
   height: 6rem;
-  padding: 1rem;
+  /* padding: 1rem; */
   margin: 1rem 2rem;
   border-radius: 2rem;
   transition-property: all;
   transition-duration: 200ms;
   transition-timing-function: ease-in;
   flex-grow: 1;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .btn:hover {
-  box-shadow: -2px -2px 5px 2px #fff, 1px 1px 5px 0 #afafaf,
-    2px 2px 5px 1px #ddd inset, -2px -2px 5px 1px #fff inset;
-  font-size: 1.8rem;
+  box-shadow: -2px -2px 5px 2px #fff, 1px 1px 5px -2px #fff inset,
+    2px 2px 7px -1px #aaa inset,
+    /* 1px 1px 5px 0px #555, */ 3px 3px 8px -1px #afafaf,
+    -4px -4px 5px 1px #fff inset, -2px -2px 5px 1px #fff inset;
+  font-size: 1.5rem;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.icon {
+  width: 80%;
+  height: 100%;
+  border: 2px solid hotpink;
+}
+
+.btn-char {
+  border: 2px solid blue;
+  height: 100%;
+  display: flex;
+  /* border-radius: 0.8rem; */
 }
